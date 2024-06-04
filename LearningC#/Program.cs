@@ -11,12 +11,10 @@
             //This is a comment in c#
 
             //V 3
-
             int x; // declaration
             x = 123; // initialization
 
             int y = 321; // declaration + initialization
-
             int z = x + y;
 
             int age = 21; // whole integer
@@ -45,6 +43,68 @@
             //pi = 420; //can't change this constant
 
             Console.WriteLine(pi);
+
+            //V 5
+
+            // type casting = Converting a value to a different data type
+            //                Useful when we accept user input (string)
+            //                Different data types can do different things
+
+            double a = 3.14;
+            int b = Convert.ToInt32(a);
+
+            int c = 123;
+            double d = Convert.ToDouble(c);
+
+            int e = 321;
+            String f = Convert.ToString(e);
+
+            String g = "$";
+            char h = Convert.ToChar(g);
+
+            String i = "true";
+            bool j = Convert.ToBoolean(i);
+
+            Console.WriteLine(b.GetType());
+            Console.WriteLine(d.GetType());
+            Console.WriteLine(f.GetType());
+            Console.WriteLine(h.GetType());
+            Console.WriteLine(j.GetType());
+
+            //V 6 
+            Console.WriteLine("What's your name?");
+            String yourName = Console.ReadLine();
+
+            Console.WriteLine("What's your age?");
+            int yourAge = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Hello " + yourName);
+            Console.WriteLine("You are " + yourAge + " years old");
+
+            //V 7
+
+            int friends = 5;
+
+            friends = friends + 1;
+            //friends += 1;
+            //friends++;
+
+            //friends = friends - 1;
+            //friends -= 1;
+            //friends--;
+
+            //friends = friends * 2;
+            //friends *= 2;
+
+            //friends = friends / 2;
+            //friends /= 2;
+
+            //int remainder = friends % 2;
+            //Console.WriteLine(remainder);
+
+            Console.WriteLine(friends);
+
+
 
             Console.ReadKey();
         }

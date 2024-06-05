@@ -149,97 +149,150 @@
 
             //V 11 
 
-            String fullName = "Hassan Karraz";
-            String phoneNumber = "123-456-7890";
+            //String fullName = "Hassan Karraz";
+            //String phoneNumber = "123-456-7890";
 
-            //fullName = fullName.ToUpper();
-            //fullName = fullName.ToLower();
-            //Console.WriteLine(fullName);
+            ////fullName = fullName.ToUpper();
+            ////fullName = fullName.ToLower();
+            ////Console.WriteLine(fullName);
 
-            //phoneNumber = phoneNumber.Replace("-","");
-            //Console.WriteLine(phoneNumber);
+            ////phoneNumber = phoneNumber.Replace("-","");
+            ////Console.WriteLine(phoneNumber);
 
-            //String userName = fullName.Insert(0,"Mr.");
-            //Console.WriteLine(userName);
+            ////String userName = fullName.Insert(0,"Mr.");
+            ////Console.WriteLine(userName);
 
-            //Console.WriteLine(fullName.Length);
+            ////Console.WriteLine(fullName.Length);
 
-            String firstName = fullName.Substring(0, 6);
-            String lastName = fullName.Substring(7);
+            //String firstName = fullName.Substring(0, 6);
+            //String lastName = fullName.Substring(7);
 
-            Console.WriteLine(firstName);
-            Console.WriteLine(lastName);
-            //V 12
+            //Console.WriteLine(firstName);
+            //Console.WriteLine(lastName);
+            ////V 12
 
 
-            //if statement = a basic form of decision making
+            ////if statement = a basic form of decision making
 
-            Console.WriteLine("Please enter your name: ");
-            String name = Console.ReadLine();
+            //Console.WriteLine("Please enter your name: ");
+            //String name = Console.ReadLine();
 
-            if (name == "")
+            //if (name == "")
+            //{
+            //    Console.WriteLine("You did not enter your name!");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Hello " + name);
+            //}
+
+            ////V 13
+
+            //// switch = an efficient alternative to many else if statements
+
+            //Console.WriteLine("What day is it today?");
+            //String day = Console.ReadLine();
+
+            //switch (day)
+            //{
+            //    case "Monday":
+            //        Console.WriteLine("It's Monday!");
+            //        break;
+            //    case "Tuesday":
+            //        Console.WriteLine("It's Tuesday!");
+            //        break;
+            //    case "Wednesday":
+            //        Console.WriteLine("It's Wednesday!");
+            //        break;
+            //    case "Thursday":
+            //        Console.WriteLine("It's Thursday!");
+            //        break;
+            //    case "Friday":
+            //        Console.WriteLine("It's Friday!");
+            //        break;
+            //    case "Saturday":
+            //        Console.WriteLine("It's Saturday!");
+            //        break;
+            //    case "Sunday":
+            //        Console.WriteLine("It's Sunday!");
+            //        break;
+            //    default:
+            //        Console.WriteLine(day + " is not a day!");
+            //        break;
+            //}
+
+
+            ////V 14
+            //// logical operators = Can be used to check if more than 1 condition is true/false
+
+            //// && (AND)
+            //// || (OR)
+
+            //Console.WriteLine("What's the temperature outside: (C)");
+            //double temp = Convert.ToDouble(Console.ReadLine());
+
+            //if (temp >= 10 && temp <= 25)
+            //{
+            //    Console.WriteLine("It's warm outside!");
+            //}
+            //else if (temp <= -50 || temp >= 50)
+            //{
+            //    Console.WriteLine("DO NOT GO OUTSIDE!");
+            //}
+
+            //V 15 
+
+            // while loop = repeats some code while some condition remains true
+
+            String name = "";
+
+            while (name == "")
             {
-                Console.WriteLine("You did not enter your name!");
+                Console.Write("Enter your name: ");
+                name = Console.ReadLine();
             }
-            else
+
+            Console.WriteLine("Hello " + name);
+
+            // V 16
+            // for loop = repeats some code a FINITE amount of times
+
+            // Count up to 10
+            for (int i = 1; i <= 10; i++)
             {
-                Console.WriteLine("Hello " + name);
+                Console.WriteLine(i);
             }
 
-            //V 13
-
-            // switch = an efficient alternative to many else if statements
-
-            Console.WriteLine("What day is it today?");
-            String day = Console.ReadLine();
-
-            switch (day)
+            // Count down from 10
+            for (int i = 10; i > 0; i--)
             {
-                case "Monday":
-                    Console.WriteLine("It's Monday!");
-                    break;
-                case "Tuesday":
-                    Console.WriteLine("It's Tuesday!");
-                    break;
-                case "Wednesday":
-                    Console.WriteLine("It's Wednesday!");
-                    break;
-                case "Thursday":
-                    Console.WriteLine("It's Thursday!");
-                    break;
-                case "Friday":
-                    Console.WriteLine("It's Friday!");
-                    break;
-                case "Saturday":
-                    Console.WriteLine("It's Saturday!");
-                    break;
-                case "Sunday":
-                    Console.WriteLine("It's Sunday!");
-                    break;
-                default:
-                    Console.WriteLine(day + " is not a day!");
-                    break;
+                Console.WriteLine(i);
             }
+            Console.WriteLine("HAPPY NEW YEAR!");
 
 
-            //V 14
-            // logical operators = Can be used to check if more than 1 condition is true/false
+            //V 17
 
-            // && (AND)
-            // || (OR)
+            // nested loops = loops inside of other loops
+            //                Uses vary. Used a lot in sorting algorithms
 
-            Console.WriteLine("What's the temperature outside: (C)");
-            double temp = Convert.ToDouble(Console.ReadLine());
+            Console.Write("How many rows?: ");
+            int rows = Convert.ToInt32(Console.ReadLine());
 
-            if (temp >= 10 && temp <= 25)
+            Console.Write("How many columns?: ");
+            int columns = Convert.ToInt32(Console.ReadLine());
+
+            Console.Write("What symbol: ");
+            String symbol = Console.ReadLine();
+
+            for (int i = 0; i < rows; i++)
             {
-                Console.WriteLine("It's warm outside!");
+                for (int j = 0; j < columns; j++)
+                {
+                    Console.Write(symbol);
+                }
+                Console.WriteLine();
             }
-            else if (temp <= -50 || temp >= 50)
-            {
-                Console.WriteLine("DO NOT GO OUTSIDE!");
-            }
-
 
 
 

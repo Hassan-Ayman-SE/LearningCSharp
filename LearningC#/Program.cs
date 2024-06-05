@@ -9,7 +9,7 @@
             //Console.WriteLine("My Name is Hassan");
             //Console.Beep();
             ////This is a comment in c#
-
+            //===============================================================================
             ////V 3
             //int x; // declaration
             //x = 123; // initialization
@@ -32,7 +32,7 @@
             //String userName = symbol + name;
 
             //Console.WriteLine("Your username is: " + userName);
-
+            //===============================================================================
             //// V 4
 
             //// constants  = immutable values which are known at compile time
@@ -43,7 +43,7 @@
             ////pi = 420; //can't change this constant
 
             //Console.WriteLine(pi);
-
+            //===============================================================================
             ////V 5
 
             //// type casting = Converting a value to a different data type
@@ -70,7 +70,7 @@
             //Console.WriteLine(f.GetType());
             //Console.WriteLine(h.GetType());
             //Console.WriteLine(j.GetType());
-
+            //===============================================================================
             ////V 6 
             //Console.WriteLine("What's your name?");
             //String yourName = Console.ReadLine();
@@ -80,7 +80,7 @@
 
             //Console.WriteLine("Hello " + yourName);
             //Console.WriteLine("You are " + yourAge + " years old");
-
+            //===============================================================================
             ////V 7
 
             //int friends = 5;
@@ -104,7 +104,7 @@
 
             //Console.WriteLine(friends);
 
-
+            //===============================================================================
             ////V 8
 
             //double xx = 3;
@@ -121,7 +121,7 @@
 
             //Console.WriteLine(aa);
 
-
+            //===============================================================================
             ////V 9
 
             //Random random = new Random();
@@ -135,7 +135,7 @@
             //Console.WriteLine(num1);
             //Console.WriteLine(num2);
             //Console.WriteLine(num3);
-
+            //===============================================================================
             ////V 10 
             //Console.WriteLine("Enter side A: ");
             //double a = Convert.ToDouble(Console.ReadLine());
@@ -146,7 +146,7 @@
             //double c = Math.Sqrt((a * a) + (b * b));
 
             //Console.WriteLine("The hypotenuse is: " + c);
-
+            //===============================================================================
             //V 11 
 
             //String fullName = "Hassan Karraz";
@@ -169,6 +169,8 @@
 
             //Console.WriteLine(firstName);
             //Console.WriteLine(lastName);
+            //===============================================================================
+
             ////V 12
 
 
@@ -185,7 +187,7 @@
             //{
             //    Console.WriteLine("Hello " + name);
             //}
-
+            //===============================================================================
             ////V 13
 
             //// switch = an efficient alternative to many else if statements
@@ -221,7 +223,7 @@
             //        break;
             //}
 
-
+            //===============================================================================
             ////V 14
             //// logical operators = Can be used to check if more than 1 condition is true/false
 
@@ -239,7 +241,7 @@
             //{
             //    Console.WriteLine("DO NOT GO OUTSIDE!");
             //}
-
+            //===============================================================================
             //V 15 
 
             // while loop = repeats some code while some condition remains true
@@ -253,7 +255,7 @@
             }
 
             Console.WriteLine("Hello " + name);
-
+            //===============================================================================
             // V 16
             // for loop = repeats some code a FINITE amount of times
 
@@ -270,7 +272,7 @@
             }
             Console.WriteLine("HAPPY NEW YEAR!");
 
-
+            //===============================================================================
             //V 17
 
             // nested loops = loops inside of other loops
@@ -293,7 +295,213 @@
                 }
                 Console.WriteLine();
             }
+            //===============================================================================
+            //==============Exercises==============
+            //V 18
+            //Random random = new Random();
+            //bool playAgain = true;
+            //int min = 1;
+            //int max = 100;
+            //int guess;
+            //int number;
+            //int guesses;
+            //String response;
 
+            //while (playAgain)
+            //{
+            //    guess = 0;
+            //    guesses = 0;
+            //    response = "";
+            //    number = random.Next(min, max + 1);
+
+            //    while (guess != number)
+            //    {
+            //        Console.WriteLine("Guess a number between " + min + " - " + max + " : ");
+            //        guess = Convert.ToInt32(Console.ReadLine());
+            //        Console.WriteLine("Guess: " + guess);
+
+            //        if (guess > number)
+            //        {
+            //            Console.WriteLine(guess + " is to high!");
+            //        }
+            //        else if (guess < number)
+            //        {
+            //            Console.WriteLine(guess + " is to low!");
+            //        }
+            //        guesses++;
+            //    }
+            //    Console.WriteLine("Number: " + number);
+            //    Console.WriteLine("YOU WIN!");
+            //    Console.WriteLine("Guesses: " + guesses);
+
+            //    Console.WriteLine("Would you like to play again (Y/N): ");
+            //    response = Console.ReadLine();
+            //    response = response.ToUpper();
+
+            //    if (response == "Y")
+            //    {
+            //        playAgain = true;
+            //    }
+            //    else
+            //    {
+            //        playAgain = false;
+            //    }
+            //}
+
+            //Console.WriteLine("Thanks for playing! ... I guess");
+
+            //===============================================================================
+            //V 19
+            Random random = new Random();
+            bool playAgain = true;
+            String player;
+            String computer;
+            String answer;
+
+            while (playAgain)
+            {
+                player = "";
+                computer = "";
+                answer = "";
+
+                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+                {
+                    Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
+                    player = Console.ReadLine();
+                    player = player.ToUpper();
+                }
+
+
+                switch (random.Next(1, 4))
+                {
+                    case 1:
+                        computer = "ROCK";
+                        break;
+                    case 2:
+                        computer = "PAPER";
+                        break;
+                    case 3:
+                        computer = "SCISSORS";
+                        break;
+                }
+
+                Console.WriteLine("Player: " + player);
+                Console.WriteLine("Computer: " + computer);
+
+                switch (player)
+                {
+                    case "ROCK":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        break;
+                    case "PAPER":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        break;
+                    case "SCISSORS":
+                        if (computer == "ROCK")
+                        {
+                            Console.WriteLine("You lose!");
+                        }
+                        else if (computer == "PAPER")
+                        {
+                            Console.WriteLine("You win!");
+                        }
+                        else
+                        {
+                            Console.WriteLine("It's a draw!");
+                        }
+                        break;
+                }
+
+                Console.Write("Would you like to play again (Y/N): ");
+                answer = Console.ReadLine();
+                answer = answer.ToUpper();
+
+                if (answer == "Y")
+                {
+                    playAgain = true;
+                }
+                else
+                {
+                    playAgain = false;
+                }
+
+            }
+
+            Console.WriteLine("Thanks for playing!");
+            //===============================================================================
+            //V 20
+            do
+            {
+                double num1 = 0;
+                double num2 = 0;
+                double result = 0;
+
+                Console.WriteLine("------------------");
+                Console.WriteLine("Calculator Program");
+                Console.WriteLine("------------------");
+
+                Console.Write("Enter number 1: ");
+                num1 = Convert.ToDouble(Console.ReadLine());
+
+                Console.Write("Enter number 2: ");
+                num2 = Convert.ToDouble(Console.ReadLine());
+
+                Console.WriteLine("Enter an option: ");
+                Console.WriteLine("\t+ : Add");
+                Console.WriteLine("\t- : Subtract");
+                Console.WriteLine("\t* : Multiply");
+                Console.WriteLine("\t/ : Divide");
+                Console.Write("Enter an option: ");
+
+
+                switch (Console.ReadLine())
+                {
+                    case "+":
+                        result = num1 + num2;
+                        Console.WriteLine($"Your result: {num1} + {num2} = " + result);
+                        break;
+                    case "-":
+                        result = num1 - num2;
+                        Console.WriteLine($"Your result: {num1} - {num2} = " + result);
+                        break;
+                    case "*":
+                        result = num1 * num2;
+                        Console.WriteLine($"Your result: {num1} * {num2} = " + result);
+                        break;
+                    case "/":
+                        result = num1 / num2;
+                        Console.WriteLine($"Your result: {num1} / {num2} = " + result);
+                        break;
+                    default:
+                        Console.WriteLine("That was not a valid option");
+                        break;
+                }
+                Console.Write("Would you like to continue? (Y = yes, N = No): ");
+            } while (Console.ReadLine().ToUpper() == "Y");
+
+            Console.WriteLine("Bye!");
 
 
             Console.ReadKey();

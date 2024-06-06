@@ -452,56 +452,56 @@
             Console.WriteLine("Thanks for playing!");
             //===============================================================================
             //V 20
-            do
-            {
-                double num1 = 0;
-                double num2 = 0;
-                double result = 0;
+            //do
+            //{
+            //    double num1 = 0;
+            //    double num2 = 0;
+            //    double result = 0;
 
-                Console.WriteLine("------------------");
-                Console.WriteLine("Calculator Program");
-                Console.WriteLine("------------------");
+            //    Console.WriteLine("------------------");
+            //    Console.WriteLine("Calculator Program");
+            //    Console.WriteLine("------------------");
 
-                Console.Write("Enter number 1: ");
-                num1 = Convert.ToDouble(Console.ReadLine());
+            //    Console.Write("Enter number 1: ");
+            //    num1 = Convert.ToDouble(Console.ReadLine());
 
-                Console.Write("Enter number 2: ");
-                num2 = Convert.ToDouble(Console.ReadLine());
+            //    Console.Write("Enter number 2: ");
+            //    num2 = Convert.ToDouble(Console.ReadLine());
 
-                Console.WriteLine("Enter an option: ");
-                Console.WriteLine("\t+ : Add");
-                Console.WriteLine("\t- : Subtract");
-                Console.WriteLine("\t* : Multiply");
-                Console.WriteLine("\t/ : Divide");
-                Console.Write("Enter an option: ");
+            //    Console.WriteLine("Enter an option: ");
+            //    Console.WriteLine("\t+ : Add");
+            //    Console.WriteLine("\t- : Subtract");
+            //    Console.WriteLine("\t* : Multiply");
+            //    Console.WriteLine("\t/ : Divide");
+            //    Console.Write("Enter an option: ");
 
 
-                switch (Console.ReadLine())
-                {
-                    case "+":
-                        result = num1 + num2;
-                        Console.WriteLine($"Your result: {num1} + {num2} = " + result);
-                        break;
-                    case "-":
-                        result = num1 - num2;
-                        Console.WriteLine($"Your result: {num1} - {num2} = " + result);
-                        break;
-                    case "*":
-                        result = num1 * num2;
-                        Console.WriteLine($"Your result: {num1} * {num2} = " + result);
-                        break;
-                    case "/":
-                        result = num1 / num2;
-                        Console.WriteLine($"Your result: {num1} / {num2} = " + result);
-                        break;
-                    default:
-                        Console.WriteLine("That was not a valid option");
-                        break;
-                }
-                Console.Write("Would you like to continue? (Y = yes, N = No): ");
-            } while (Console.ReadLine().ToUpper() == "Y");
+            //    switch (Console.ReadLine())
+            //    {
+            //        case "+":
+            //            result = num1 + num2;
+            //            Console.WriteLine($"Your result: {num1} + {num2} = " + result);
+            //            break;
+            //        case "-":
+            //            result = num1 - num2;
+            //            Console.WriteLine($"Your result: {num1} - {num2} = " + result);
+            //            break;
+            //        case "*":
+            //            result = num1 * num2;
+            //            Console.WriteLine($"Your result: {num1} * {num2} = " + result);
+            //            break;
+            //        case "/":
+            //            result = num1 / num2;
+            //            Console.WriteLine($"Your result: {num1} / {num2} = " + result);
+            //            break;
+            //        default:
+            //            Console.WriteLine("That was not a valid option");
+            //            break;
+            //    }
+            //    Console.Write("Would you like to continue? (Y = yes, N = No): ");
+            //} while (Console.ReadLine().ToUpper() == "Y");
 
-            Console.WriteLine("Bye!");
+            //Console.WriteLine("Bye!");
             //===============================================================================
             //V 21
             // array = a variable that can store multiple values. fixed size
@@ -611,12 +611,67 @@
 
             //===============================================================================
             //V 27
+            // exception = errors that occur during execution
+
+            //        try     = try some code that is considered "dangerous"
+            //        catch   = catches and handles exceptions when they occur
+            //        finally = always executes regardless if exception is caught or not
+
+            int x;
+            int y;
+            double result;
+
+            try
+            {
+                Console.Write("Enter number 1: ");
+                x = Convert.ToInt32(Console.ReadLine());
+
+                Console.Write("Enter number 2: ");
+                y = Convert.ToInt32(Console.ReadLine());
+
+                result = x / y;
+
+                Console.WriteLine("result: " + result);
+            }
+            catch (FormatException e)
+            {
+                Console.WriteLine("Enter ONLY numbers PLEASE!");
+            }
+            catch (DivideByZeroException e)
+            {
+                Console.WriteLine("You can't divide by zero! IDIOT!");
+            }
+            catch (Exception e)
+            {
+                Console.WriteLine("Something went wrong!");
+            }
+            finally
+            {
+                Console.WriteLine("Thanks for visiting!");
+            }
+
+            //===============================================================================
+            // V 28
+
+            // conditional operator = used in conditional assignment if a condition is true/false
+
+            //(condition) ? x : y
+
+            double temperature = 20;
+            String message;
+
+            message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
+
+            Console.WriteLine(message);
+
+            //===============================================================================
+            // V 29
 
 
 
 
             //===============================================================================
-            // V 28
+            // V 30
 
             Console.ReadKey();
         }

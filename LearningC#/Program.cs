@@ -502,23 +502,36 @@
             } while (Console.ReadLine().ToUpper() == "Y");
 
             Console.WriteLine("Bye!");
-
+            //===============================================================================
             //V 21
             // array = a variable that can store multiple values. fixed size
 
             //String[] cars = {"BMW", "Mustang", "Corvette"};
 
-            String[] cars = new string[3];
+            //String[] cars = new string[3];
 
-            cars[0] = "Tesla";
-            cars[1] = "Mustang";
-            cars[2] = "Corvette";
+            //cars[0] = "Tesla";
+            //cars[1] = "Mustang";
+            //cars[2] = "Corvette";
 
-            for (int i = 0; i < cars.Length; i++)
+            //for (int i = 0; i < cars.Length; i++)
+            //{
+            //    Console.WriteLine(cars[i]);
+            //}
+
+            //===============================================================================
+            //V 22
+            // foreach loop = a simpler way to iterate over an array, but it's less flexible
+
+            String[] cars = { "BMW", "Mustang", "Corvette" };
+
+            foreach (String car in cars)
             {
-                Console.WriteLine(cars[i]);
+                Console.WriteLine(car);
             }
 
+            //===============================================================================
+            //V 23
 
             Console.ReadKey();
         }

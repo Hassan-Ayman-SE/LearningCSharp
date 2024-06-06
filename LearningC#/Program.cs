@@ -532,6 +532,91 @@
 
             //===============================================================================
             //V 23
+            /*
+             inside the main
+
+            / method  = performs a section of code, whenever it's called "invoked".
+            //           benefit = Let's us reuse code w/o writing it multiple times
+            //           Good practice is to capitalize method names (I forgot in this video)
+
+            String name = "Bro";
+            int age = 21;
+
+            SingHappyBirthday(name, age);
+
+             */
+
+            static void SingHappyBirthday(String birthdayBoy, int yearsOld)
+            {
+                Console.WriteLine("Happy birthday to you!");
+                Console.WriteLine("Happy birthday to you!");
+                Console.WriteLine("Happy birthday dear " + birthdayBoy);
+                Console.WriteLine("You are " + yearsOld + " years old!");
+                Console.WriteLine("Happy birthday to you!");
+                Console.WriteLine();
+            }
+
+            //===============================================================================
+
+            //V 24
+            /*INSIDE MAIN
+                         // return  = returns data back to the place where a method is invoked
+
+            double x;
+            double y;
+            double result;
+
+            Console.WriteLine("Enter in number 1: ");
+            x = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("Enter in number 2: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            result = Multiply(x, y);
+
+            Console.WriteLine(result);
+
+             */
+            static double Multiply(double x, double y)
+            {
+                return x * y;
+            }
+            //===============================================================================
+            //V 25
+            // method overloading  = methods share same name, but different parameters
+            //                       name + parameters = signature
+            //                       methods must have a unique signature
+
+            //===============================================================================
+            //V 26
+            /*INSIDE MAIN
+             //params keyword = a method parameter that takes a variable number of arguments.
+            //                 The parameter type must be a single - dimensional array
+
+            double total = CheckOut(3.99, 5.75, 15, 1.00, 10.25);
+
+            Console.WriteLine(total);
+             */
+
+            static double CheckOut(params double[] prices)
+            {
+                double total = 0;
+
+                foreach (double price in prices)
+                {
+                    total += price;
+                }
+                return total;
+            }
+
+            //===============================================================================
+            //V 27
+
+
+
+
+            //===============================================================================
+            // V 28
 
             Console.ReadKey();
         }

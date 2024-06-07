@@ -758,6 +758,15 @@ namespace LearningC_
 
             //===============================================================================
             // V 34
+            // static = modifier to declare a static member, which belongs to the class itself
+            //          rather than to any specific object
+
+            Car car3 = new Car("Ford", "Mustang", 2022, "red");
+            Car car4 = new Car("Chevy", "Corvette", 2021, "blue");
+            Car car5 = new Car("Chevy", "Corvette", 2021, "blue");
+
+            Console.WriteLine(Car.numberOfCars);
+            Car.StartRace();
 
 
 

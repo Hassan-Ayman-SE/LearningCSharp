@@ -12,6 +12,9 @@ namespace LearningC_
         String model;
         int year;
         String color;
+        public static int numberOfCars;
+
+
 
         public Car(String make, String model, int year, String color)
         {
@@ -19,6 +22,12 @@ namespace LearningC_
             this.model = model;
             this.year = year;
             this.color = color;
+            numberOfCars++;
+        }
+
+        public static void StartRace()
+        {
+            Console.WriteLine("The race has begun!");
         }
 
         public void Drive()

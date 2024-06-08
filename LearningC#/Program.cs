@@ -768,35 +768,37 @@ namespace LearningC_
             Console.WriteLine(Car.numberOfCars);
             Car.StartRace();
 
-
-
-
-
-
             //===============================================================================
             // V 35
+            // overloaded constructors = technique to create multiple constructors,
+            //                           with a different set of parameters.
+            //                           name + parameters = signature
 
-
-
-
-
-
+            Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella");
 
 
             //===============================================================================
             // V 36
+            // inheritance = 1 or more child classes recieving fields, methods, etc. from a common parent
+
+            //Bicycle bicycle = new Bicycle();
+
+            //Console.WriteLine(bicycle.speed);
+            //Console.WriteLine(bicycle.wheels);
+            //bicycle.go();
 
 
-
-
-
-
-
-
+            //class Bicycle : Vehicle
+            //{
+            //    public int wheels = 2;
+            //}
 
 
             //===============================================================================
-            // V 37
+            // V 37 
+            //Check V 37 to see ex.
+            // abstract classes =  modifier that indicates missing components or incomplete implementation
+
 
 
 

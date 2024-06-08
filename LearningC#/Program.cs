@@ -876,10 +876,22 @@ namespace LearningC_
             Console.WriteLine(car.ToString());
 
 
-
-
             //===============================================================================
-            // V 42
+            // V 42 check vedio please 42
+            // polymorphism = Greek word that means to "have many forms"
+            //                Objects can be identified by more than one type
+            //                Ex. A Dog is also: Canine, Animal, Organism
+
+            //Car car = new Car();
+            //Bicycle bicycle = new Bicycle();
+            //Boat boat = new Boat();
+
+            //Vehicle[] vehicles = { car, bicycle, boat };
+
+            //foreach (Vehicle vehicle in vehicles)
+            //{
+            //    vehicle.Go();
+            //}
 
 
 

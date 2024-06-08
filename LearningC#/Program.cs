@@ -800,13 +800,16 @@ namespace LearningC_
             // abstract classes =  modifier that indicates missing components or incomplete implementation
 
 
-
-
-
-
-
             //===============================================================================
             // V 38
+            //Array of objects
+
+            //Car[] garage = { new Car("Mustang"), new Car("Corvette"), new Car("Lambo") };
+
+            //foreach (Car car in garage)
+            //{
+            //    Console.WriteLine(car.model);
+            //}
 
 
 

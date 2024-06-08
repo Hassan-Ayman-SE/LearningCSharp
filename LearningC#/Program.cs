@@ -248,31 +248,31 @@ namespace LearningC_
 
             // while loop = repeats some code while some condition remains true
 
-            String name = "";
+            //String name = "";
 
-            while (name == "")
-            {
-                Console.Write("Enter your name: ");
-                name = Console.ReadLine();
-            }
+            //while (name == "")
+            //{
+            //    Console.Write("Enter your name: ");
+            //    name = Console.ReadLine();
+            //}
 
-            Console.WriteLine("Hello " + name);
+            //Console.WriteLine("Hello " + name);
             //===============================================================================
             // V 16
             // for loop = repeats some code a FINITE amount of times
 
             // Count up to 10
-            for (int i = 1; i <= 10; i++)
-            {
-                Console.WriteLine(i);
-            }
+            //for (int i = 1; i <= 10; i++)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            // Count down from 10
-            for (int i = 10; i > 0; i--)
-            {
-                Console.WriteLine(i);
-            }
-            Console.WriteLine("HAPPY NEW YEAR!");
+            //// Count down from 10
+            //for (int i = 10; i > 0; i--)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("HAPPY NEW YEAR!");
 
             //===============================================================================
             //V 17
@@ -280,23 +280,23 @@ namespace LearningC_
             // nested loops = loops inside of other loops
             //                Uses vary. Used a lot in sorting algorithms
 
-            Console.Write("How many rows?: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("How many rows?: ");
+            //int rows = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("How many columns?: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
+            //Console.Write("How many columns?: ");
+            //int columns = Convert.ToInt32(Console.ReadLine());
 
-            Console.Write("What symbol: ");
-            String symbol = Console.ReadLine();
+            //Console.Write("What symbol: ");
+            //String symbol = Console.ReadLine();
 
-            for (int i = 0; i < rows; i++)
-            {
-                for (int j = 0; j < columns; j++)
-                {
-                    Console.Write(symbol);
-                }
-                Console.WriteLine();
-            }
+            //for (int i = 0; i < rows; i++)
+            //{
+            //    for (int j = 0; j < columns; j++)
+            //    {
+            //        Console.Write(symbol);
+            //    }
+            //    Console.WriteLine();
+            //}
             //===============================================================================
             //==============Exercises==============
             //V 18
@@ -354,104 +354,104 @@ namespace LearningC_
 
             //===============================================================================
             //V 19
-            Random random = new Random();
-            bool playAgain = true;
-            String player;
-            String computer;
-            String answer;
+            //Random random = new Random();
+            //bool playAgain = true;
+            //String player;
+            //String computer;
+            //String answer;
 
-            while (playAgain)
-            {
-                player = "";
-                computer = "";
-                answer = "";
+            //while (playAgain)
+            //{
+            //    player = "";
+            //    computer = "";
+            //    answer = "";
 
-                while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
-                {
-                    Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
-                    player = Console.ReadLine();
-                    player = player.ToUpper();
-                }
+            //    while (player != "ROCK" && player != "PAPER" && player != "SCISSORS")
+            //    {
+            //        Console.Write("Enter ROCK, PAPER, or SCISSORS: ");
+            //        player = Console.ReadLine();
+            //        player = player.ToUpper();
+            //    }
 
 
-                switch (random.Next(1, 4))
-                {
-                    case 1:
-                        computer = "ROCK";
-                        break;
-                    case 2:
-                        computer = "PAPER";
-                        break;
-                    case 3:
-                        computer = "SCISSORS";
-                        break;
-                }
+            //    switch (random.Next(1, 4))
+            //    {
+            //        case 1:
+            //            computer = "ROCK";
+            //            break;
+            //        case 2:
+            //            computer = "PAPER";
+            //            break;
+            //        case 3:
+            //            computer = "SCISSORS";
+            //            break;
+            //    }
 
-                Console.WriteLine("Player: " + player);
-                Console.WriteLine("Computer: " + computer);
+            //    Console.WriteLine("Player: " + player);
+            //    Console.WriteLine("Computer: " + computer);
 
-                switch (player)
-                {
-                    case "ROCK":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("You lose!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("You win!");
-                        }
-                        break;
-                    case "PAPER":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("You win!");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("You lose!");
-                        }
-                        break;
-                    case "SCISSORS":
-                        if (computer == "ROCK")
-                        {
-                            Console.WriteLine("You lose!");
-                        }
-                        else if (computer == "PAPER")
-                        {
-                            Console.WriteLine("You win!");
-                        }
-                        else
-                        {
-                            Console.WriteLine("It's a draw!");
-                        }
-                        break;
-                }
+            //    switch (player)
+            //    {
+            //        case "ROCK":
+            //            if (computer == "ROCK")
+            //            {
+            //                Console.WriteLine("It's a draw!");
+            //            }
+            //            else if (computer == "PAPER")
+            //            {
+            //                Console.WriteLine("You lose!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("You win!");
+            //            }
+            //            break;
+            //        case "PAPER":
+            //            if (computer == "ROCK")
+            //            {
+            //                Console.WriteLine("You win!");
+            //            }
+            //            else if (computer == "PAPER")
+            //            {
+            //                Console.WriteLine("It's a draw!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("You lose!");
+            //            }
+            //            break;
+            //        case "SCISSORS":
+            //            if (computer == "ROCK")
+            //            {
+            //                Console.WriteLine("You lose!");
+            //            }
+            //            else if (computer == "PAPER")
+            //            {
+            //                Console.WriteLine("You win!");
+            //            }
+            //            else
+            //            {
+            //                Console.WriteLine("It's a draw!");
+            //            }
+            //            break;
+            //    }
 
-                Console.Write("Would you like to play again (Y/N): ");
-                answer = Console.ReadLine();
-                answer = answer.ToUpper();
+            //    Console.Write("Would you like to play again (Y/N): ");
+            //    answer = Console.ReadLine();
+            //    answer = answer.ToUpper();
 
-                if (answer == "Y")
-                {
-                    playAgain = true;
-                }
-                else
-                {
-                    playAgain = false;
-                }
+            //    if (answer == "Y")
+            //    {
+            //        playAgain = true;
+            //    }
+            //    else
+            //    {
+            //        playAgain = false;
+            //    }
 
-            }
+            //}
 
-            Console.WriteLine("Thanks for playing!");
+            //Console.WriteLine("Thanks for playing!");
             //===============================================================================
             //V 20
             //do
@@ -525,12 +525,12 @@ namespace LearningC_
             //V 22
             // foreach loop = a simpler way to iterate over an array, but it's less flexible
 
-            String[] cars = { "BMW", "Mustang", "Corvette" };
+            //String[] cars = { "BMW", "Mustang", "Corvette" };
 
-            foreach (String car in cars)
-            {
-                Console.WriteLine(car);
-            }
+            //foreach (String car in cars)
+            //{
+            //    Console.WriteLine(car);
+            //}
 
             //===============================================================================
             //V 23
@@ -548,15 +548,15 @@ namespace LearningC_
 
              */
 
-            static void SingHappyBirthday(String birthdayBoy, int yearsOld)
-            {
-                Console.WriteLine("Happy birthday to you!");
-                Console.WriteLine("Happy birthday to you!");
-                Console.WriteLine("Happy birthday dear " + birthdayBoy);
-                Console.WriteLine("You are " + yearsOld + " years old!");
-                Console.WriteLine("Happy birthday to you!");
-                Console.WriteLine();
-            }
+            //static void SingHappyBirthday(String birthdayBoy, int yearsOld)
+            //{
+            //    Console.WriteLine("Happy birthday to you!");
+            //    Console.WriteLine("Happy birthday to you!");
+            //    Console.WriteLine("Happy birthday dear " + birthdayBoy);
+            //    Console.WriteLine("You are " + yearsOld + " years old!");
+            //    Console.WriteLine("Happy birthday to you!");
+            //    Console.WriteLine();
+            //}
 
             //===============================================================================
 
@@ -579,10 +579,10 @@ namespace LearningC_
             Console.WriteLine(result);
 
              */
-            static double Multiply(double x, double y)
-            {
-                return x * y;
-            }
+            //static double Multiply(double x, double y)
+            //{
+            //    return x * y;
+            //}
             //===============================================================================
             //V 25
             // method overloading  = methods share same name, but different parameters
@@ -600,16 +600,16 @@ namespace LearningC_
             Console.WriteLine(total);
              */
 
-            static double CheckOut(params double[] prices)
-            {
-                double total = 0;
+            //static double CheckOut(params double[] prices)
+            //{
+            //    double total = 0;
 
-                foreach (double price in prices)
-                {
-                    total += price;
-                }
-                return total;
-            }
+            //    foreach (double price in prices)
+            //    {
+            //        total += price;
+            //    }
+            //    return total;
+            //}
 
             //===============================================================================
             //V 27
@@ -619,38 +619,38 @@ namespace LearningC_
             //        catch   = catches and handles exceptions when they occur
             //        finally = always executes regardless if exception is caught or not
 
-            int x;
-            int y;
-            double result;
+            //int x;
+            //int y;
+            //double result;
 
-            try
-            {
-                Console.Write("Enter number 1: ");
-                x = Convert.ToInt32(Console.ReadLine());
+            //try
+            //{
+            //    Console.Write("Enter number 1: ");
+            //    x = Convert.ToInt32(Console.ReadLine());
 
-                Console.Write("Enter number 2: ");
-                y = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Enter number 2: ");
+            //    y = Convert.ToInt32(Console.ReadLine());
 
-                result = x / y;
+            //    result = x / y;
 
-                Console.WriteLine("result: " + result);
-            }
-            catch (FormatException e)
-            {
-                Console.WriteLine("Enter ONLY numbers PLEASE!");
-            }
-            catch (DivideByZeroException e)
-            {
-                Console.WriteLine("You can't divide by zero! IDIOT!");
-            }
-            catch (Exception e)
-            {
-                Console.WriteLine("Something went wrong!");
-            }
-            finally
-            {
-                Console.WriteLine("Thanks for visiting!");
-            }
+            //    Console.WriteLine("result: " + result);
+            //}
+            //catch (FormatException e)
+            //{
+            //    Console.WriteLine("Enter ONLY numbers PLEASE!");
+            //}
+            //catch (DivideByZeroException e)
+            //{
+            //    Console.WriteLine("You can't divide by zero! IDIOT!");
+            //}
+            //catch (Exception e)
+            //{
+            //    Console.WriteLine("Something went wrong!");
+            //}
+            //finally
+            //{
+            //    Console.WriteLine("Thanks for visiting!");
+            //}
 
             //===============================================================================
             // V 28
@@ -659,12 +659,12 @@ namespace LearningC_
 
             //(condition) ? x : y
 
-            double temperature = 20;
-            String message;
+            //double temperature = 20;
+            //String message;
 
-            message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
+            //message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
 
-            Console.WriteLine(message);
+            //Console.WriteLine(message);
 
             //===============================================================================
             // V 29
@@ -672,12 +672,12 @@ namespace LearningC_
             //                        precede a string literal with $
             //                        {} are placeholders
 
-            String firstName = "Bro";
-            String lastName = "Code";
-            int age = 21;
+            //String firstName = "Bro";
+            //String lastName = "Code";
+            //int age = 21;
 
-            Console.WriteLine($"Hello {firstName} {lastName}.");
-            Console.WriteLine($"You are {age,-10} old.");
+            //Console.WriteLine($"Hello {firstName} {lastName}.");
+            //Console.WriteLine($"You are {age,-10} old.");
 
 
 
@@ -685,27 +685,27 @@ namespace LearningC_
 
             //===============================================================================
             // V 30
-            String[,] parkingLot = { { "Mustang", "F-150", "Explorer" },
-                                                   { "Corvette", "Camaro", "Silverado" },
-                                                   { "Corolla", "Camry", "Rav4" }
-                                                 };
+            //String[,] parkingLot = { { "Mustang", "F-150", "Explorer" },
+            //                                       { "Corvette", "Camaro", "Silverado" },
+            //                                       { "Corolla", "Camry", "Rav4" }
+            //                                     };
 
-            parkingLot[0, 2] = "Fusion";
-            parkingLot[2, 0] = "Tacoma";
-            /*
-            foreach(String car in parkingLot)
-            {
-                Console.WriteLine(car);
-            }
-            */
-            for (int i = 0; i < parkingLot.GetLength(0); i++)
-            {
-                for (int j = 0; j < parkingLot.GetLength(1); j++)
-                {
-                    Console.Write(parkingLot[i, j] + " ");
-                }
-                Console.WriteLine();
-            }
+            //parkingLot[0, 2] = "Fusion";
+            //parkingLot[2, 0] = "Tacoma";
+            ///*
+            //foreach(String car in parkingLot)
+            //{
+            //    Console.WriteLine(car);
+            //}
+            //*/
+            //for (int i = 0; i < parkingLot.GetLength(0); i++)
+            //{
+            //    for (int j = 0; j < parkingLot.GetLength(1); j++)
+            //    {
+            //        Console.Write(parkingLot[i, j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
 
 
             //===============================================================================
@@ -713,9 +713,9 @@ namespace LearningC_
             // class = A bundle of related code.
             //              Can be used as a blueprint to create objects (OOP)
 
-            Messages.Hello();
-            Messages.Waiting();
-            Messages.Bye();
+            //Messages.Hello();
+            //Messages.Waiting();
+            //Messages.Bye();
 
 
 
@@ -725,20 +725,20 @@ namespace LearningC_
             //          A class can be used as a blueprint to create objects (OOP)
             //          objects can have fields & methods (characteristics & actions)
 
-            Human human1 = new Human();
-            Human human2 = new Human();
+            //Human human1 = new Human();
+            //Human human2 = new Human();
 
-            human1.name = "Rick";
-            human1.age = 65;
+            //human1.name = "Rick";
+            //human1.age = 65;
 
-            human2.name = "Morty";
-            human2.age = 16;
+            //human2.name = "Morty";
+            //human2.age = 16;
 
-            human1.Eat();
-            human1.Sleep();
+            //human1.Eat();
+            //human1.Sleep();
 
-            human2.Eat();
-            human2.Sleep();
+            //human2.Eat();
+            //human2.Sleep();
 
             //===============================================================================
             // V 33
@@ -746,11 +746,11 @@ namespace LearningC_
             //               Same name as the class name
             //               Can be used to assign arguments to fields when creating an object
 
-            Car car1 = new Car("Ford", "Mustang", 2022, "red");
-            Car car2 = new Car("Chevy", "Corvette", 2021, "blue");
+            //Car car1 = new Car("Ford", "Mustang", 2022, "red");
+            //Car car2 = new Car("Chevy", "Corvette", 2021, "blue");
 
-            car1.Drive();
-            car2.Drive();
+            //car1.Drive();
+            //car2.Drive();
 
 
 
@@ -761,12 +761,12 @@ namespace LearningC_
             // static = modifier to declare a static member, which belongs to the class itself
             //          rather than to any specific object
 
-            Car car3 = new Car("Ford", "Mustang", 2022, "red");
-            Car car4 = new Car("Chevy", "Corvette", 2021, "blue");
-            Car car5 = new Car("Chevy", "Corvette", 2021, "blue");
+            //Car car3 = new Car("Ford", "Mustang", 2022, "red");
+            //Car car4 = new Car("Chevy", "Corvette", 2021, "blue");
+            //Car car5 = new Car("Chevy", "Corvette", 2021, "blue");
 
-            Console.WriteLine(Car.numberOfCars);
-            Car.StartRace();
+            //Console.WriteLine(Car.numberOfCars);
+            //Car.StartRace();
 
             //===============================================================================
             // V 35
@@ -774,7 +774,7 @@ namespace LearningC_
             //                           with a different set of parameters.
             //                           name + parameters = signature
 
-            Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella");
+            //Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella");
 
 
             //===============================================================================
@@ -869,6 +869,12 @@ namespace LearningC_
 
             //===============================================================================
             // V 41
+            //ToString() = converts an object to its string representation so that it is suitable for display
+
+            Car car = new Car("Chevy", "Corvette", 2022, "blue");
+
+            Console.WriteLine(car.ToString());
+
 
 
 

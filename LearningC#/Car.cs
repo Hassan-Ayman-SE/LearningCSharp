@@ -34,6 +34,12 @@ namespace LearningC_
         {
             Console.WriteLine("You drive the " + make + " " + model);
         }
+
+        public override string ToString()
+        {
+            return "This is a " + make + " " + model;
+        }
+
     }
 
 }

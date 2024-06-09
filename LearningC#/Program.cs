@@ -1052,25 +1052,43 @@ namespace LearningC_
 
             //===============================================================================
             // V 47
+            // auto-Implemented property =  shortcut when no additional logic is required in the property
+            //                                you do not have to define a field for a property,
+            //                                you only have to write get; and/or set; inside the property                             
+
+        //    Car car = new Car("Porsche");
+
+        //    Console.WriteLine(car.Model);
+
+
+        //        class Car
+        //{
+        //    public String Model { get; set; }
+
+        //    public Car(String model)
+        //    {
+        //        this.Model = model;
+        //    }
+        //}
 
 
 
-            //===============================================================================
-            // V 48
+        //===============================================================================
+        // V 48
 
 
 
-            //===============================================================================
-            // V 49
+        //===============================================================================
+        // V 49
 
 
 
-            //===============================FINISH================================================
-            // V 50
+        //===============================FINISH================================================
+        // V 50
 
 
 
-            Console.ReadKey();
+        Console.ReadKey();
         }
     }
 }

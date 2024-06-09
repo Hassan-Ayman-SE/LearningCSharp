@@ -1056,25 +1056,74 @@ namespace LearningC_
             //                                you do not have to define a field for a property,
             //                                you only have to write get; and/or set; inside the property                             
 
-        //    Car car = new Car("Porsche");
+            //    Car car = new Car("Porsche");
 
-        //    Console.WriteLine(car.Model);
+            //    Console.WriteLine(car.Model);
 
 
-        //        class Car
-        //{
-        //    public String Model { get; set; }
+            //        class Car
+            //{
+            //    public String Model { get; set; }
 
-        //    public Car(String model)
+            //    public Car(String model)
+            //    {
+            //        this.Model = model;
+            //    }
+            //}
+
+
+
+            //===============================================================================
+            // V 48
+            // enums = special "class" that contains a set of named integer constants.
+            //         Use enums when you have values that you know will not change,
+            //         To get the integer value from an item, you must explicitly convert to an int
+
+            //         name = integer
+
+            //Console.WriteLine(Planets.Mercury + " is planet #" + (int)Planets.Mercury);
+            //Console.WriteLine(Planets.Pluto + " is planet #" + (int)Planets.Pluto);
+
+        //    String name = PlanetRadius.Earth.ToString();
+        //    int radius = (int)PlanetRadius.Earth;
+        //    double volume = Volume(PlanetRadius.Earth);
+
+        //    Console.WriteLine("planet: " + name);
+        //    Console.WriteLine("radius: " + radius + "km");
+        //    Console.WriteLine("volume: " + volume + "km^3");
+
+
+        //    public static double Volume(PlanetRadius radius)
         //    {
-        //        this.Model = model;
+        //        double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
+        //        return volume;
         //    }
+
+        //        enum Planets
+        //{
+        //    Mercury = 1,
+        //    Venus = 2,
+        //    Earth = 3,
+        //    Mars = 4,
+        //    Jupiter = 5,
+        //    Saturn = 6,
+        //    Uranus = 7,
+        //    Neptune = 8,
+        //    Pluto = 9
         //}
 
-
-
-        //===============================================================================
-        // V 48
+        //enum PlanetRadius
+        //{
+        //    Mercury = 2439,
+        //    Venus = 6051,
+        //    Earth = 6371,
+        //    Mars = 3389,
+        //    Jupiter = 69911,
+        //    Saturn = 58232,
+        //    Uranus = 25362,
+        //    Neptune = 24622,
+        //    Pluto = 1188
+        //}
 
 
 
